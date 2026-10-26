@@ -7,12 +7,11 @@ function Footer() {
   };
 
   return (
-    <footer className="mt-16 bg-white text-gray-700">
+    <footer className=" bg-white text-gray-700">
       <div className="mx-auto max-w-7xl px-6 py-12">
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
 
-          {/* Brand */}
           <div className="lg:col-span-2">
             <a href="/" className="text-3xl font-bold text-gray-900">
               Lysa<span className="text-blue-500">Fashion</span>
@@ -24,7 +23,6 @@ function Footer() {
               accessories for every occasion.
             </p>
 
-            {/* Social Media */}
             <div className="mt-5 flex flex-wrap gap-3">
               <a
                 href="https://www.instagram.com/"

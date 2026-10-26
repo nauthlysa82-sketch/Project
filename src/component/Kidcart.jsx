@@ -1,39 +1,28 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import Kidproducts from "./assets/KidProduct .js";
 
 function Kidcart() {
   return (
-    <div className="min-h-screen bg-blue-50/50 px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
+    <div >
+      <div className="">
 
         {/* Banner Image */}
         <div className="text-center">
           <img
             src="https://i.pinimg.com/1200x/d7/01/c5/d701c5a9f982760b833b1b25d2bf791d.jpg"
             alt="Kids Fashion"
-            className="block h-[300px] w-full rounded-2xl object-cover sm:h-[400px] lg:h-[450px]"
+            className="block h-[300px] w-full  object-cover sm:h-[400px] lg:h-[450px]"
           />
 
-          <p className="mt-8 text-sm font-bold uppercase tracking-[0.25em] text-blue-600">
-            Discover Your Style
-          </p>
-
-          <h1 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-            Kids Fashion
-          </h1>
-
-          <p className="mx-auto mt-3 max-w-xl leading-7 text-slate-500">
-            Discover our latest kids' fashion collection.
-            Find comfortable and stylish outfits for every occasion.
-          </p>
-
-          <div className="mx-auto mt-5 h-1 w-20 rounded-full bg-blue-600" />
+         
+      
         </div>
 
         {/* Section Heading */}
-        <div className="mb-8 mt-12 flex flex-wrap items-end justify-between gap-4">
+        <div className="mb-8 mt-12 flex flex-wrap items-end justify-between gap-4 mx-auto max-w-7xl">
           <div>
             <p className="text-sm font-semibold text-blue-600">
               KIDS COLLECTION
@@ -50,7 +39,7 @@ function Kidcart() {
         </div>
 
         {/* Kids Product Cards */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto max-w-7xl">
           {Kidproducts.map((pr) => (
             <div
               key={pr.id}
@@ -58,11 +47,11 @@ function Kidcart() {
             >
               {/* Product Image */}
               <Link
-                to={`/products/${pr.id}`}
+                to={`/products/kids/${pr.id}`}
                 className="relative block overflow-hidden bg-blue-50"
               >
                 <img
-                  src={pr.image}
+                  src={pr.image || pr.img}
                   alt={pr.name}
                   loading="lazy"
                   className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
@@ -79,7 +68,7 @@ function Kidcart() {
                   Kids Product #{pr.id}
                 </p>
 
-                <Link to={`/Kitproducts/${pr.id}`}>
+                <Link to={`/products/kids/${pr.id}`}>
                   <h3 className="mt-2 truncate text-lg font-bold text-slate-800 transition group-hover:text-blue-600">
                     {pr.name}
                   </h3>
@@ -93,8 +82,12 @@ function Kidcart() {
                     ).toFixed(2)}
                   </p>
 
-                  <Link to={`/products/women/${pr.id}`}>
-                    View Details
+                  <Link
+                    to={`/products/kids/${pr.id}`}
+                    className="inline-flex items-center gap-1 rounded-lg bg-blue-600 px-3 py-2.5 text-sm font-bold text-white transition hover:bg-blue-700"
+                  >
+                    Details
+                    <ArrowRight size={16} />
                   </Link>
                 </div>
               </div>

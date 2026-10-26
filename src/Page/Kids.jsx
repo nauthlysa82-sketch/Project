@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 function Kids() {
   return (
     <div>
-      <Link to={`/products/kids/${pr.id}`}></Link>
       <Kidcart />
     </div>
   )

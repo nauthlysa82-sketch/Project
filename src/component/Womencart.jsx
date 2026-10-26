@@ -92,7 +92,7 @@ function WomenProduct() {
             >
               {/* Product Image */}
               <Link
-                to={`/products/${pr.id}`}
+                to={`/products/women/${pr.id}`}
                 className="relative block overflow-hidden bg-slate-100"
               >
                 <img
@@ -117,7 +117,7 @@ function WomenProduct() {
                   WomenProduct #{pr.id}
                 </p>
 
-                <Link to={`/woenproducts/${pr.id}`}>
+                <Link to={`/products/women/${pr.id}`}>
                   <h3 className="mt-2 truncate font-bold text-slate-800 transition hover:text-blue-600">
                     {pr.name}
                   </h3>
@@ -133,7 +133,7 @@ function WomenProduct() {
                   </p>
 
                   <Link
-                    to={`/womenproducts/${pr.id}`}
+                    to={`/products/women/${pr.id}`}
                     aria-label={`View ${pr.name}`}
                     className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-xs font-bold text-white transition hover:bg-blue-600 sm:text-sm"
                   >
