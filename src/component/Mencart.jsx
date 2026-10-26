@@ -124,8 +124,8 @@ function Mencart() {
                     aria-label={`View ${pr.name} details`}
                     className="flex items-center gap-1.5 rounded-lg bg-slate-900 px-2.5 py-2 text-xs font-semibold text-white transition hover:bg-blue-600 sm:px-3 sm:text-sm"
                   >
-                    <ShoppingBag size={15} />
-                    <span>View Details</span>
+    
+                    <span>Add to Cart</span>
                   </Link>
 
                 </div>

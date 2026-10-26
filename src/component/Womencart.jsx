@@ -137,8 +137,7 @@ function WomenProduct() {
                     aria-label={`View ${pr.name}`}
                     className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-xs font-bold text-white transition hover:bg-blue-600 sm:text-sm"
                   >
-                    <ShoppingBag size={15} />
-                    View
+                    Add to Cart
                   </Link>
                 </div>
               </div>

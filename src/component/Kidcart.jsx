@@ -14,11 +14,11 @@ function Kidcart() {
           <img
             src="https://i.pinimg.com/1200x/d7/01/c5/d701c5a9f982760b833b1b25d2bf791d.jpg"
             alt="Kids Fashion"
-            className="block h-[300px] w-full  object-cover sm:h-[400px] lg:h-[450px]"
+            className="block h-[300px] w-full rounded-2xl object-cover sm:h-[400px] lg:h-[450px]"
           />
 
          
-      
+        
         </div>
 
         {/* Section Heading */}
@@ -33,9 +33,6 @@ function Kidcart() {
             </h2>
           </div>
 
-          <p className="rounded-full border border-blue-100 bg-white px-4 py-2 text-sm font-medium text-blue-700">
-            {Kidproducts.length} Products
-          </p>
         </div>
 
         {/* Kids Product Cards */}
@@ -57,9 +54,7 @@ function Kidcart() {
                   className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
                 />
 
-                <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-blue-700 shadow-sm">
-                  {pr.category || "Kids"}
-                </span>
+              
               </Link>
 
               {/* Product Details */}
@@ -84,10 +79,9 @@ function Kidcart() {
 
                   <Link
                     to={`/products/kids/${pr.id}`}
-                    className="inline-flex items-center gap-1 rounded-lg bg-blue-600 px-3 py-2.5 text-sm font-bold text-white transition hover:bg-blue-700"
+                    className="inline-flex items-center gap-1 rounded-lg bg-black px-3 py-2.5 text-sm font-bold text-white transition hover:bg-blue-700"
                   >
-                    Details
-                    <ArrowRight size={16} />
+                   Add ro Cart
                   </Link>
                 </div>
               </div>
